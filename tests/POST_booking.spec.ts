@@ -16,7 +16,7 @@ test('@API Create a booking id using dynamic request', async ({ request }) => {
     const input = ["Hi", "Prasanth", 121, true, "UAE"];
 
     // Updating POST API request body
-    const postAPIRequest = await formatAPIRequest(postJsonTemplate, input);
+    const postAPIRequest = await formatAPIRequest(postJsonTemplate, input); 
 
     //post request
     const postResponse = await request.post(`${process.env.REST_FULL_BOOKER_BASEURL}/booking`,
